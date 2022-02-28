@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<head>
+<title>HomePage</title>
+<meta charset="utf-8">
+<link rel="stylesheet" href="./stylesheet/index.css">
+<link rel="stylesheet" href="./stylesheet/swiper.min.css">
+<script src="./js/swiper.min.js"></script>
+<style>
+body, html {
+    padding: 0;
+    margin: 0;
+    position: relative;
+    height: 100%;
+}
+.swiper-container {
+    width: 100%;
+    height: 430px;
+    margin: 50px auto;
+}
+.swiper-slide {
+    background: #f1f1f1;
+    color:#000;
+    text-align: center;
+    line-height: 30px;
+}
+</style>
+ <div class="swiper-container">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><img src="./images/image1.jpeg" alt="画像１"></div>
+          <div class="swiper-slide"><img src="./images/image2.jpeg" alt="画像2"></div>
+          <div class="swiper-slide"><img src="./images/image3.jpeg" alt="画像3"></div>
+          <div class="swiper-slide"><img src="./images/image4.jpeg" alt="画像4"></div>
+          <div class="swiper-slide"><img src="./images/image5.jpeg" alt="画像5"></div>
+        </div>
+     </div>
+     <footer>
+       <p>Copyright © ○○○○ All Rights Reserved.</p>
+    </footer>
+
+  </div>
+
+  <script src="./js/swiper.min.js"></script>
+  <script>
+    var swiper = new Swiper({
+        el: '.swiper-container',
+        initialSlide: 2,
+        spaceBetween: 50,
+        slidesPerView: 2,
+        centeredSlides: true,
+        autoplay: true,
+    });
+</script>
+<div class="swiper-container">
+          <div class="swiper-scrollbar"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="./images/image1.jpeg" alt="a"></div>
+            <div class="swiper-slide"><img src="./images/image2.jpeg" alt="aa"></div>
+            <div class="swiper-slide"><img src="./images/image3.jpeg" alt="aaa"></div>
+            <div class="swiper-slide"><img src="./images/image4.jpeg" alt="aaaa"></div>
+            <div class="swiper-slide"><img src="./images/image5.jpeg" alt="aaaaa"></div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+        <script>
+      var swiper = new Swiper({
+          el: '.swiper-container',
+          initialSlide: 2,
+          spaceBetween: 50,
+          slidesPerView: 2,
+          centeredSlides: true,
+          slideToClickedSlide: true,
+          grabCursor: true,
+          autoplay: true,
+          autoplaySpeed: 20,
+          speed: 300,
+          scrollbar: {
+            el: '.swiper-scrollbar',
+          },
+          mousewheel: {
+            enabled: true,
+          },
+          keyboard: {
+            enabled: true,
+          },
+          pagination: {
+            el: '.swiper-pagination',
+          },
+          navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+          },
+           });
+  </script>
